@@ -10,12 +10,32 @@
     <title>Hello Vue</title>
 </head>
 <body>
-    <div id="app">
-        <h1> {{message}} </h1>
-        <img :src="image" alt="">
 
+   <div id="app" class="container m-5">
+    <div class="row justify-content-center p-5">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-dark-subtle">
+            <h1 class="text-center">{{ message }}</h1>
+          </div>
+          <div class="card-body bg-dark-subtle">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <img :src="image" :class="myclass" alt="Immagine 1">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img :src="image2" :class="myclass" alt="Immagine 2">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img :src="image3" :class="myclass" alt="Immagine 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+  </div>
+   
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./vue/hello.js"></script>
 </body>
